@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/class/class",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "叮咚",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "热门",
+        "iconPath": "images/tab/order.png",
+        "selectedIconPath": "images/tab/order_selected.png"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "text": "分类",
+        "iconPath": "images/tab/menu.png",
+        "selectedIconPath": "images/tab/menu_selected.png"
+      }
+    ],
+    "borderStyle": "black",
+    "color": "#828282",
+    "selectedColor": "#fca605",
+    "backgroundColor": "#f7f7f7"
+  },
+  "debug": false
+}

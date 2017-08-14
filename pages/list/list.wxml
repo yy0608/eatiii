@@ -1,0 +1,18 @@
+<view class="list-container">
+  <view class="search-cont">
+    <input placeholder="输入菜名、食材..." confirm-type="search" bindconfirm="search" />
+  </view>
+  <view class="list-item" bindtap="goDetail" data-id="{{item.cp_id}}" wx:for="{{listData}}" wx:key="index">
+    <view class="img-cont">
+      <image src="{{'https://www.snubi.top/static/cpimg/' + item.cp_pic}}" mode="aspectFill"></image>
+    </view>
+    <view class="text-cont">
+      <view class="name">{{item.cp_name}}</view>
+      <view class="desc">{{item.cp_des}}</view>
+      <view class="tags">
+        <text>{{item.cp_browse}}次浏览</text>
+        <text class="save">{{item.cp_save}}人收藏</text>
+      </view>
+    </view>
+  </view>
+</view>

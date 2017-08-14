@@ -1,0 +1,27 @@
+<view wx:if="{{detailData}}" class="detail-container">
+  <view class="info-container">
+    <view class="img-cont">
+      <image mode="aspectFill" src="{{'https://www.snubi.top/static/cpimg/' + detailData.cp_info.cp_pic}}"></image>
+      <view class="tags">
+        <text>浏览：{{detailData.cp_info.cp_browse}}</text>
+        <text class="save">收藏：{{detailData.cp_info.cp_save}}</text>
+      </view>
+    </view>
+    <view class="desc">{{detailData.cp_info.cp_des}}</view>
+    <view class="material-list">
+      <view class="material-item" wx:for="{{materialList}}" wx:key="index">
+        <text>{{item.cl}}</text>
+        <text>{{item.num}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="steps-container">
+    <view class="step-item" wx:for="{{detailData.cp_step_info}}" wx:key="index">
+      <text class="number">{{index}}</text> 
+      <view class="img-cont">
+        <image mode="aspectFill" src="{{'https://www.snubi.top/static/cpimg/' + item.step_pic}}"></image>
+      </view>
+      <view class="desc">{{item.step_des}}</view>
+    </view>
+  </view>
+</view>

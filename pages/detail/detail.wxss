@@ -1,0 +1,82 @@
+page {
+  background-color: #f5f5f5;
+}
+.info-container .img-cont {
+  position: relative;
+}
+.info-container .img-cont image {
+  width: 750rpx;
+  height: 400rpx;
+  display: block;
+}
+.info-container .img-cont .tags {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 24rpx;
+  padding: 8rpx 6rpx;
+  border-radius: 6rpx;
+  background-color: rgba(255, 255, 255, .75);
+  color: #333;
+}
+.info-container .img-cont .save {
+  margin-left: 30rpx;
+}
+.info-container .desc {
+  padding: 20rpx;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 28rpx;
+  color: #333;
+  background-color: #fff;
+}
+.material-list {
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 10rpx 30rpx;
+}
+.material-list .material-item {
+  display: flex;
+  padding: 16rpx;
+  font-size: 28rpx;
+  border-bottom: 1px solid #e0e0e0;
+}
+.material-list .material-item:last-child {
+  border-bottom: none;
+}
+.material-list .material-item text {
+  width: 50%;
+}
+.steps-container {
+  padding: 20rpx 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.steps-container .step-item {
+  position: relative;
+  width: 360rpx;
+  margin-left: 10rpx;
+}
+.steps-container .step-item .number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, .75);
+  width: 40rpx;
+  height: 40rpx;
+  /* border-radius: 50%; */
+  text-align: center;
+  line-height: 40rpx;
+}
+.steps-container .step-item image {
+  display: block;
+  width: 360rpx;
+  height: 360rpx;
+}
+.steps-container .step-item .desc {
+  margin: 12rpx 0 20rpx;
+  font-size: 28rpx;
+  line-height: 1.3;
+}

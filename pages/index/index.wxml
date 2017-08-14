@@ -1,0 +1,13 @@
+<view class="hot-container">
+  <view bindtap="goDetail" data-id="{{item.cp_id}}" class="hot-item" wx:for="{{hotList}}" wx:key="index">
+    <view class="name">{{item.cp_name}}</view>
+    <view class="img-cont">
+      <image mode="aspectFill" src="{{'https://www.snubi.top/static/cpimg/' + item.cp_pic}}"></image>
+      <view class="tags">
+        <text>浏览：{{item.cp_browse}}</text>
+        <text class="save">收藏：{{item.cp_save}}</text>
+      </view>
+    </view>
+    <view class="desc">{{item.cp_des}}</view>
+  </view>
+</view>
